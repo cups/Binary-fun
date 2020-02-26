@@ -1,2 +1,0 @@
-private file, rm from staged, then delete
-
