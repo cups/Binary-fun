@@ -5,7 +5,7 @@
 /* short series of stupid stunts extracted from Hackers Delight book 2nd Ed. */	
 
 int main(void) {
-	printf("\n2.2 Page 16 - Addition combined with logical operations\n===============================\n");
+	printf("\n2.2 Page 16 - Addition combined with logical operations\n=============================\n");
 	
 	int x = 23;
 	
