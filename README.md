@@ -35,14 +35,18 @@ so when you do the likes of :
 
 ...
 pbin(7);
+
 pbin_nb(23, "take an integer");
+
 pbin_nb(7^23, "^ acts as a toggle")
 ...
 
 you'll see :
 
-0000 0111	(7)  
+0000 0111	(7)
+  
 0001 0111	(23)  <-- take an integer
+
 0001 0000	(16)  <-- ^ acts as a toggle
 
 
