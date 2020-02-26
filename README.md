@@ -18,9 +18,34 @@ So I thought I'd better stop, learn C properly, get 'closer to the metal' and al
 
 ## You
 
-YOU : might be similar, or are just struggling to understand all the palava about binary and bitwise.  These files might help, I hope so.
+Maybe you are in a  similar boat, or are just struggling to understand all the palava about binary and bitwise.  These files might help, I hope so.
 
 Maybe you want an accompaniment to your own digestion of "Hackers Delight".
+
+## Usage
+
+There is one include file with some binary print functions which might help you visualise some of the values and two other dependcies,
+
+...
+
+#include "binary_print.h"
+...
+
+so when you do the likes of :
+
+...
+pbin(7);
+pbin_nb(23, "take an integer");
+pbin_nb(7^23, "^ acts as a toggle")
+...
+
+you'll see :
+
+0000 0111	(7)  
+0001 0111	(23)  <-- take an integer
+0001 0000	(16)  <-- ^ acts as a toggle
+
+
 
 ## Hold your horses
 
