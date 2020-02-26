@@ -24,19 +24,19 @@ Maybe you want an accompaniment to your own digestion of "Hackers Delight".
 
 ## Usage
 
-There is one include file with some binary print functions which might help you visualise some of the values and two other dependcies,
+There is one include file with some binary print functions which might help you visualise some of the values and two other dependcies, called `pbin()` [print binary] and `pbin_nb()` [print binary with a note] in case you want to add some annotation.
 
 ` #include "binary_print.h" `
 
 so when you do the likes of :
 
-` pbin(7);`
+` pbin(7);
 
-` pbin_nb(23, "take an integer");`
+ pbin_nb(23, "take an integer");
 
-` pbin_nb(7^23, "^ acts as a toggle")`
+ pbin_nb(7^23, "^ acts as a toggle")`
 
-
+There are also two equivalent functions named `pbin8()` and `pbin_nb8()` which accept 8 bit chars instead of 32 bit integers.
 
 In your console you'll see :
 
@@ -47,7 +47,12 @@ In your console you'll see :
 ` 0001 0000	(16)  <-- ^ acts as a toggle`
 
 
-Then use the same methods to play around with values.<F8>
+Then use the same methods to play around with values.
+
+
+## Caveats
+
+This is only tested on a 64 bit intel processor, running Ubuntu 14.04. 32 bit integers, 2's complement and has __builtin_clz() [count leading zeros] and __builtin_ctz() [count trailing zeros] instructions. This enables you to take an integer such as 4 [0000 0100] and know that the count of trailing zeros is 2, sometimes useful, e.g. if ctz > 1  and clz is 0 then its a positive odd number.
 
 ## Hold your horses
 
