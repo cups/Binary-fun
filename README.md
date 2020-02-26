@@ -27,26 +27,24 @@ Maybe you want an accompaniment to your own digestion of "Hackers Delight".
 There is one include file with some binary print functions which might help you visualise some of the values and two other dependcies,
 
 ...
-#include "binary_print.h"
+ #include "binary_print.h"
 ...
 
 so when you do the likes of :
 
 ...
-pbin(7);
-...
-...
-pbin_nb(23, "take an integer");
-...
-...
-pbin_nb(7^23, "^ acts as a toggle")
+
+ pbin(7);
+ pbin_nb(23, "take an integer");
+ pbin_nb(7^23, "^ acts as a toggle")
+
 ...
 
 In your console you'll see :
 
-0000 0111	(7)
-0001 0111	(23)  <-- take an integer
-0001 0000	(16)  <-- ^ acts as a toggle
+ 0000 0111	(7)
+ 0001 0111	(23)  <-- take an integer
+ 0001 0000	(16)  <-- ^ acts as a toggle
 
 Then use the same methods to play around with values.
 
