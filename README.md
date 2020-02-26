@@ -42,15 +42,14 @@ Example : write a file containing  :
 In your console you'll see :
 
 ` 0000 0111	(7)`
-
 ` 0001 0111	(23)  <-- take an integer`
 
 ` 0001 0000	(16)  <-- ^ acts as a toggle`
 
 
-Then use the same methods to play around with values.
+Then use the same methods to play around with values. 
 
-There are also two equivalent functions named `pbin8()` and `pbin_nb8()` which accept 8 bit chars instead of 32 bit integers.
+There are also two equivalent functions named `pbin8()` and `pbin8_nb()` which accept 8 bit chars instead of 32 bit integers.
 
 ## Caveats
 
@@ -58,8 +57,9 @@ This is only tested on an x86 64 bit intel processor, running Ubuntu 14.04. Gcc 
 
 I'd love to be able to compare this to an ARM processor, but I'm not (back) there yet.
 
-It has __builtin_clz() [count leading zeros] and __builtin_ctz() [count trailing zeros] instructions. This enables you to take an integer such as 4 [0000 0100] and know that the count of trailing zeros is 2, sometimes useful. I have used this in some examples. Check your environment carefully, else "Hackers Delight" shows how to roll your own.
+It has `__builtin_clz()` (count leading zeros) and ` __builtin_ctz()` (count trailing zeros) instructions. This enables you to take an integer such as 4 [0000 0100] and know that the count of trailing zeros is 2, sometimes useful. I have used this in some examples. Check your environment carefully, else "Hackers Delight" shows how to roll your own.
 
+When 32 bit integers are used, the included `pbin(int)` function truncates the first 24 bits, so you cannot see exactly what is going on, I did not realise the importance of this 'till I was dealing with negative signed ints, hence you may notice the char-friendly `pbin8(char)` function appears sporadically. 
 The initial title of this repo was to be "Binary Fun with Hackers Delight" but I realised that the majority of that book went straight over my head. These are just a few tricks I gleaned and managed to get working, so be aware.
 
 Programmers following you may hate you for using some of these tricks unless :
@@ -67,6 +67,7 @@ Programmers following you may hate you for using some of these tricks unless :
 * You document your code liberally
 * You actually do save the day by speeding something up
 
+Much of this may not make any sense if you do not have a copy of "Hackers Delight" - and I sometimes mention the relevant page numbers of Revision 2 of the book. Search and you will find it all online, if you can read books like that. 
 
 ## Hold your horses
 
