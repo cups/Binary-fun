@@ -2,7 +2,7 @@
 
 When I say fun, I don't mean you are necessarily going to laugh, unless its at my attempts at so called 'programming'.
 
-Here be a series of C files each illustrating a facet of binary integer manipulation which might be useful if you have processor intensive code squirreled away which you know are slowing down your application. e.g. in nested loops somewhere. 
+Here be a series of C files each illustrating a facet of binary integer manipulation which might be useful if you have processor intensive code squirrelled away which you know are slowing down your application. e.g. in nested loops somewhere. 
 
 ## Me
 
