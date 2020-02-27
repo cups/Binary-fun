@@ -26,27 +26,33 @@ Maybe you want an accompaniment to your own digestion of "Hackers Delight".
 ## Usage
 
 There is one include file with some binary print functions which might help you visualise the 1s and 0s of the values.
-They are :  `pbin(int)` [print binary] and `pbin_nb(int, *char)` [print binary with a note] in case you want to add some annotation.
+They are :  `pbin(int)` (print binary) and `pbin_nb(int, *char)` (print binary with a note) in case you want to add some annotation.
 
-` #include "binary_print.h" `
+### Example : write a file containing  :
 
-Example : write a file containing  :
+```c 
+#include <stdio.h>
+#include <string.h
+#include "binary_print.h" 
 
-` pbin(7);`
 
-` pbin_nb(23, "take an integer");`
+int main() {
 
-` pbin_nb(7^23, "^ acts as a toggle")`
+ pbin(7);
+ pbin_nb(23, "take an integer");
+ pbin_nb(7^23, "^ acts as a toggle")
 
+return 1;
+}
+```
 
 In your console you'll see :
 
-` 0000 0111	(7)`
-
-` 0001 0111	(23)  <-- take an integer`
-
-` 0001 0000	(16)  <-- ^ acts as a toggle`
-
+```console 
+  0000 0111	(7)
+  0001 0111	(23)  <-- take an integer
+  0001 0000	(16)  <-- ^ acts as a toggle
+```
 
 Then use the same methods to play around with values. 
 
@@ -58,9 +64,9 @@ This is only tested on an x86 64 bit intel processor, running Ubuntu 14.04. Gcc 
 
 I'd love to be able to compare these outcomes to those on an ARM processor, but I'm not (back) there yet.
 
-Gcc makes `__builtin_clz()` (count leading zeros) and ` __builtin_ctz()` (count trailing zeros) available. This enabled me to take an integer such as 4 [0000 0100] and know that the count of trailing zeros is 2, sometimes useful. I have used this in some examples. Check your environment carefully, else "Hackers Delight" shows how to roll your own.
+Gcc makes `__builtin_clz()` (count leading zeros) and ` __builtin_ctz()` (count trailing zeros) available. This enabled me to take an integer such as 4 (0000 0100) and know that the count of trailing zeros is 2 which is sometimes useful. I have used this method in some examples. Check your environment carefully, else "Hackers Delight" shows how to roll your own.
 
-When 32 bit integers are used, the included `pbin(int)` function truncates the first 24 bits, so you cannot see exactly what is going on, I did not realise the importance of this 'till I was dealing with negative signed ints, hence you may notice the char-friendly `pbin8(char)` function appears sporadically. 
+When 32 bit integers are used, the included `pbin(int)` functions truncates the first 24 bits, so you cannot see exactly what is going on. I did not realise the importance of this 'till I was dealing with negative signed ints, hence you may notice the more char-friendly `pbin8(char)` function appears somewhat sporadically. 
 
 Programmers following you may hate you for using some of these tricks unless :
 
