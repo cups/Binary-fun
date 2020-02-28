@@ -61,7 +61,7 @@ When using 32 bit integers the `pbin(int)` functions truncate the first 24 bits,
 
 ## Caveats
 
-This is all written in straight c - but the basic binary manipulation outcomes should hold true in all languages, but be warned stuff like Big Endian, 2s complement or not, integer size and so on may cause differences.
+This is all written in straight c - but the basic binary manipulation outcomes should hold true in all languages, but be warned stuff like Big Endian, 2s complement or not, integer size, signed or unsigned etc may cause different outcomes.
 
 This is only tested on an x86 64 bit intel processor, running Ubuntu 14.04. Gcc version 4.8.4, 32 bit integers, 2's complement.
 
@@ -74,12 +74,14 @@ Programmers following you may hate you for using some of these tricks unless :
 * You document your code liberally
 * You actually do save the day by speeding something up
 
-The initial title of this repo was to be "Binary Fun with Hackers Delight" but I realised that the majority of that book went straight over my head. These are just a few tricks I gleaned and managed to get working, so be aware.
+My title for this repo was to be "Binary Fun with Hackers Delight" but I realised that the majority of that book went straight over my head. These are just a few tricks I gleaned and managed to get working, so be aware.
 
-Much of this may not make any sense if you do not have a copy of "Hackers Delight" - and I sometimes mention the relevant page numbers of Revision 2 of the book. Search and you will find it all online, if you can read books on a screen. 
+I sometimes mention the relevant page numbers, or chapters of Revision 2 of the book which you will easily find online. 
 
-## Hold your horses
-
-I'm a git newb, so will need to get these files into an easier to use folder system. I've never contributed anything to Open Source despite being a huge fan, and frequent advocate, so I used a wtf licence so you can help yourself. I also plaguerised the book, obviously, and a couple of SO posts and binary articles and intend to give due credit - though the in-file comments should show these quite clearly.
+I also plaguerised the book, obviously, along with a couple of SO posts and binary articles and intend to give due credit - though the in-file comments should show these quite clearly.
 
 I am not planning on spending any more time elucidating upon, or embroidering these files, but if I do actually come across places where I have used I may add working examples into the code samples.
+
+## Going further
+
+If you are intending to press on with your binary journey, it seems you will need to study the next stage which means reading and understanding Assembly. Just because you have substituted some basic c with a fancy binary predicate it does not mean you have tricked the intepreter into speeding up. How did you measure it? 
