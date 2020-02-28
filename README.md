@@ -53,7 +53,7 @@ return 1;
   0001 0111	(23)  <-- take an integer
   0001 1000	(24)  <-- ^ acts as a toggle
 ```
-Then play around with values 'till your brain figures out what is going on, and where on earth you may finally find a place for that trick in your life.   
+Then play around with values 'till your brain figures out what is going on, and where on earth you may finally find a place for that trick in your life. Do you see how the set bits (1s) in "15" cause the equivalent (ie last 4) bits of "23" to "toggle"?
 
 There are also two equivalent functions named `pbin8(char)` and `pbin8_nb(char, *char)` which accept 8 bit chars instead of 32 bit integers.
 
