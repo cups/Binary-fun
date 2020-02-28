@@ -8,21 +8,21 @@ I have no training in either mathematics or algebra and I correlated these files
 
 ## Me
 
-An ex LAMP dev now fiddling with Micro Controllers (uControllers). Yeah, sure, I'm a big believer in premature optimization being evil etc what? Even got POEAA and Refactoring on the bookshelf and all that, hold up ...
+An ex LAMP dev now fiddling with Micro Controllers (uControllers). I came from a land steeped in the omens like "premature optimization is the root of all evil" etc with shelves decorated with POEAA, Refactoring, Clean Code and all that, but now, hold up ... readablity may not be one of my main aims ... the balance has shifted.
 
-SUDDENLY thats all shoved to one side, because now processor cycles on cControllers REALLY DO matter: 
+Extra processor cycles on cControllers REALLY DO matter a LOT and I now understand the consequences :
 
 * the longer they take the more precious battery they eat up 
 * vociferous code likewise eats up precious tiny memory
 * data to be transmitted over RF should be as succinct as possible
 
-So I thought I'd better stop massacring C++, change down a gear, and learn C properly - get 'closer to the metal' and all that. Now that I appreciate uController ports and muliple I/O switching it makes sense to now go on and fully grok binary/bitwise ops.  Hence I ploughed merrily thru "Hackers Delight" and thought I'd share what I learned and leave it hanging around the web in case I need it when being remote somewhere.
+So I thought I'd better stop massacring C++, change down a gear, and learn C properly - get 'closer to the metal' and all that. Now that I appreciate uController ports and muliple I/O switching it makes sense to now go on and fully grok binary/bitwise ops.  Hence I ploughed merrily thru "Hackers Delight" and thought I'd share what I learned and leave it hanging around the web in case I need it when being remote somewhere, and maybe it could help someone else.
 
 ## You
 
-Maybe you are also self taught and did not study CS formally, or you skipped this important part of your trade, or you just put it off. Perhaps you are just struggling to understand all the palaver about binary and bitwise operations. These files might help, I hope so.
+Maybe you are also self taught and did not study CS formally, or you skipped this important part of your trade, or you just put it off. Perhaps you are just struggling to understand all the palaver about binary and bitwise operations. 
 
-It could be that you want an accompaniment to your own digestion of "Hackers Delight".
+It could be that you want an accompaniment to your own digestion of "Hackers Delight". These files might help, I hope so.
 
 ## Usage
 
@@ -53,7 +53,7 @@ return 1;
   0001 0111	(23)  <-- take an integer
   0001 1000	(24)  <-- ^ acts as a toggle
 ```
-Then play around with values 'till your brain figures out what is going on, and where on earth you may finally find a place for that information in your life.   
+Then play around with values 'till your brain figures out what is going on, and where on earth you may finally find a place for that trick in your life.   
 
 There are also two equivalent functions named `pbin8(char)` and `pbin8_nb(char, *char)` which accept 8 bit chars instead of 32 bit integers.
 
@@ -80,6 +80,6 @@ Much of this may not make any sense if you do not have a copy of "Hackers Deligh
 
 ## Hold your horses
 
-I'm a git newb, so will need to get these files into an easier to use folder system. I've never contributed anything to Open Source despite being a huge fan, and frequent advocate, so I used a wtf licence so you can help yourself. I also plaguerised the book, obviously, and a couple of SO posts and binary articles and intend to give due credit - though the comments should show these quite clearly.
+I'm a git newb, so will need to get these files into an easier to use folder system. I've never contributed anything to Open Source despite being a huge fan, and frequent advocate, so I used a wtf licence so you can help yourself. I also plaguerised the book, obviously, and a couple of SO posts and binary articles and intend to give due credit - though the in-file comments should show these quite clearly.
 
 I am not planning on spending any more time elucidating upon, or embroidering these files, but if I do actually come across places where I have used I may add working examples into the code samples.
