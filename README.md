@@ -2,18 +2,19 @@
 
 When I say fun, I don't mean you are necessarily going to laugh, unless its at my attempts at so called 'programming'.
 
-Here be a series of C files each illustrating a facet of binary integer manipulation which might be useful if you have processor intensive code squirrelled away which you know are slowing down your application. e.g. in nested loops somewhere. I correlated these files as part of a self-learning process.
+Here be a series of C files each illustrating a facet of binary integer manipulation which might be useful if you have processor intensive code squirrelled away which you know are slowing down your application. e.g. in nested loops somewhere. 
+
+I have no training in either mathematics or algebra and I correlated these files as part of a self-learning process. Only the simplest algorithms and tricks which I could imagine myself actually using, based on my experience as a developer, have been extracted.
 
 ## Me
 
-An ex LAMP dev now fiddling with Micro Controllers. Yeah, sure, I'm a big believer in premature optimization being evil etc what? Even got POEAA and Refactoring on the bookshelf and all that, hold up ...
+An ex LAMP dev now fiddling with Micro Controllers (uControllers). Yeah, sure, I'm a big believer in premature optimization being evil etc what? Even got POEAA and Refactoring on the bookshelf and all that, hold up ...
 
-SUDDENLY thats all shoved to one side, because now processor cycles REALLY DO matter: 
+SUDDENLY thats all shoved to one side, because now processor cycles on cControllers REALLY DO matter: 
 
-* they eat battery up 
-* vociferous code eats up precious tiny memory
-* I'm using C/C++ now, not PHP
-* wireless data gotta be succinct
+* the longer they take the more precious battery they eat up 
+* vociferous code likewise eats up precious tiny memory
+* data to be transmitted over RF should be as succinct as possible
 
 So I thought I'd better stop massacring C++, change down a gear, and learn C properly - get 'closer to the metal' and all that. Now that I appreciate uController ports and muliple I/O switching it makes sense to now go on and fully grok binary/bitwise ops.  Hence I ploughed merrily thru "Hackers Delight" and thought I'd share what I learned and leave it hanging around the web in case I need it when being remote somewhere.
 
