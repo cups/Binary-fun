@@ -19,9 +19,9 @@ So I thought I'd better stop massacring C++, change down a gear, and learn C pro
 
 ## You
 
-Maybe you are in a  similar boat to me in that you did not study CS formally so skipped this important part of your trade, or put it off. Maybe you are just struggling to understand all the palaver about binary and bitwise operations. These files might help, I hope so.
+Maybe you are also self taught and did not study CS formally, or you skipped this important part of your trade, or you just put it off. Perhaps you are just struggling to understand all the palaver about binary and bitwise operations. These files might help, I hope so.
 
-Maybe you want an accompaniment to your own digestion of "Hackers Delight".
+It could be that you want an accompaniment to your own digestion of "Hackers Delight".
 
 ## Usage
 
@@ -30,7 +30,7 @@ Each of the c files is designed to run on its own and show at least a single bin
 There is one include file with some binary print functions which might help you visualise the 1s and 0s of the values.
 Thes are called `pbin(int)` (print binary) and `pbin_nb(int, *char)` (print binary with a note) in case you want to add some annotation.
 
-### Example : write a file containing  :
+#### Example : write a file containing  :
 
 ```c 
 #include <stdio.h>
@@ -45,7 +45,8 @@ return 1;
 }
 ```
 
-In your console you'll see :
+#### In your console you'll see :
+
 ```console 
   0000 1111	(15)
   0001 0111	(23)  <-- take an integer
@@ -59,7 +60,7 @@ When using 32 bit integers the `pbin(int)` functions truncate the first 24 bits,
 
 ## Caveats
 
-This is all written in straight c - but the basic binary manipulation outcomes should hold true in all languages, but be warned stuff like Big Endian, 2s Complement integer size and so on may cause differences.
+This is all written in straight c - but the basic binary manipulation outcomes should hold true in all languages, but be warned stuff like Big Endian, 2s complement or not, integer size and so on may cause differences.
 
 This is only tested on an x86 64 bit intel processor, running Ubuntu 14.04. Gcc version 4.8.4, 32 bit integers, 2's complement.
 
@@ -78,6 +79,6 @@ Much of this may not make any sense if you do not have a copy of "Hackers Deligh
 
 ## Hold your horses
 
-I'm a git newb. I've never contributed anything to Open Source despite being a huge fan, and frequent advocate, so I still have to sort out licensing includes for these files, but honestly, help yourself. I also plaguerised a couple of SO posts and binary articles and intend to give due credit - though the comments should show these quite clearly.
+I'm a git newb, so will need to get these files into an easier to use folder system. I've never contributed anything to Open Source despite being a huge fan, and frequent advocate, so I used a wtf licence so you can help yourself. I also plaguerised the book, obviously, and a couple of SO posts and binary articles and intend to give due credit - though the comments should show these quite clearly.
 
 I am not planning on spending any more time elucidating upon, or embroidering these files, but if I do actually come across places where I have used I may add working examples into the code samples.
