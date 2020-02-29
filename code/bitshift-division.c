@@ -33,12 +33,20 @@ int main(void) {
 	pbin_nb(0xAAAAAAAB, "Magic No. #3 = 0xAAAAAAAB");
 	pbin_nb((x*0xAAAAAAAB) , "x*0xAAAAAAAB - WHAAT?\n");
 	
+	printf("\nDivide by 10\n");	
+	// via https://cboard.cprogramming.com/c-programming/128545-division-ten-magic-numbers.html
+	// div by 10 - works up to 99,999
+	pbin_nb(x, "x");
+	pbin_nb((x * 6554UL) >> 16, "div by 10 (x * 6554UL) >> 16");	
+	
 	//https://stackoverflow.com/questions/4886290/division-by-a-constant-using-shifts-and-adds-subtracts/6976383#6976383
 	printf("\n\nDivide 8000 by 41\n");
 	pbin_nb((8000 * 0x5555) >> 22, "(8000 * 0x5555) >> 22");
 	
 	
 	pbin((x * 0x5555) >> 16);
+	
+
 	
 	// https://stackoverflow.com/questions/4886290/division-by-a-constant-using-shifts-and-adds-subtracts/6976383#6976383
 	// file:///home/administrator/Downloads/kdiv/README.html
